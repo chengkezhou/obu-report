@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Time record util</title>
+<style>
+.bar{
+	width:100%;
+	height:60px;
+	
+}
+.item{
+	width:100px;
+	height:100%;
+	background-color:#CCC;
+	float:left;
+	margin-left:10px;
+	text-align:center
+	line-height:60px;
+
+}
+.content{
+	clear:both;
+	width:100%;
+	background-color:#eee;
+}
+</style>
+<script>
+function qidong()
+{	
+	var x=document.getElementById("content");
+	var time=new Date();
+	var dt=time.toLocaleString(); 
+	var hh=document.createElement("br");
+	var timetxt=dt
+	var tt=document.createTextNode("启动-"+dt);
+	x.appendChild(hh);
+	x.appendChild(tt);
+}
+function jijiasu()
+{	
+	var x=document.getElementById("content");
+	var time=new Date();
+	var dt=time.toLocaleString(); 
+	var hh=document.createElement("br");
+	var timetxt=dt
+	var tt=document.createTextNode("急加速-"+dt);
+	x.appendChild(hh);
+	x.appendChild(tt);
+}
+function jijiansu()
+{	
+	var x=document.getElementById("content");
+	var time=new Date();
+	var dt=time.toLocaleString(); 
+	var hh=document.createElement("br");
+	var timetxt=dt
+	var tt=document.createTextNode("急减速-"+dt);
+	x.appendChild(hh);
+	x.appendChild(tt);
+}
+function pengzhuang()
+{	
+	var x=document.getElementById("content");
+	var time=new Date();
+	var dt=time.toLocaleString(); 
+	var hh=document.createElement("br");
+	var timetxt=dt
+	var tt=document.createTextNode("碰撞-"+dt);
+	x.appendChild(hh);
+	x.appendChild(tt);
+}
+function jizhuanwan()
+{	
+	var x=document.getElementById("content");
+	var time=new Date();
+	var dt=time.toLocaleString(); 
+	var hh=document.createElement("br");
+	var timetxt=dt
+	var tt=document.createTextNode("急转弯-"+dt);
+	x.appendChild(hh);
+	x.appendChild(tt);
+}
+function konghang()
+{	
+	var x=document.getElementById("content");
+	var time=new Date();
+	var dt=time.toLocaleString(); 
+	var hh=document.createElement("br");
+	var timetxt=dt
+	var tt=document.createTextNode("-------------------------");
+	x.appendChild(hh);
+	x.appendChild(tt);
+}
+function xihuo()
+{	
+	var x=document.getElementById("content");
+	var time=new Date();
+	var dt=time.toLocaleString(); 
+	var hh=document.createElement("br");
+	var timetxt=dt
+	var tt=document.createTextNode("熄火-"+dt);
+	x.appendChild(hh);
+	x.appendChild(tt);
+}
+function baojing()
+{	
+	var x=document.getElementById("content");
+	var time=new Date();
+	var dt=time.toLocaleString(); 
+	var hh=document.createElement("br");
+	var timetxt=dt
+	var tt=document.createTextNode("报警-"+dt);
+	x.appendChild(hh);
+	x.appendChild(tt);
+}
+
+</script>
+</head>
+<body>
+	<div  class="bar">
+		<button class="item" id="qidong" onclick="qidong()">
+			<h4>启动</h4>
+		</button>
+		<button class="item" id="jijiasu" onclick="jijiasu()">
+			<h4>急加速</h4>
+		</button>
+		<button class="item" id="jijiansu" onclick="jijiansu()">
+			<h4>急减速</h4>
+		</button>
+		<button class="item" id="jizhuanwan" onclick="jizhuanwan()">
+			<h4>急转弯</h4>
+		</button>
+		<button class="item" id="baojing" onclick="baojing()">
+			<h4>报警</h4>
+		</button>
+		<button class="item" id="pengzhuang" onclick="pengzhuang()">
+			<h4>碰撞</h4>
+		</button>
+		<button class="item" id="xihuo" onclick="xihuo()">
+			<h4>熄火</h4>
+		</button>
+		<button class="item" id="konghang" onclick="konghang()">
+			<h4>空行</h4>
+		</button>
+
+		<div class="content" id="content"></div>
+	</div>
+</body>
+
+</html>
+
